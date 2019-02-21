@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Lab3.Models;
 
 namespace Lab3.Models
 {
@@ -12,6 +13,7 @@ namespace Lab3.Models
         public int Salary { get; set; }
 
     }
+   
   
 }
 

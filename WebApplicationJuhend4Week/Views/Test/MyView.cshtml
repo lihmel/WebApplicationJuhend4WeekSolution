@@ -1,4 +1,4 @@
-﻿
+﻿@model Employee
 @{
     Layout = null;
 }
@@ -11,6 +11,23 @@
     <title>MyView</title>
 </head>
 <body>
-    Welcome to MVC learning!
+<div>
+
+    <b> Employee Details</b><br />
+    Employee Name: @emp.FirstName@emp.LastName <br/>
+    Employee Salary: @emp.Salary.ToString("C")
+    @if (Model.Salary > 15000)
+    {
+        <span style="background-color:yellow">
+            Employee Salary: @Model.Salary.ToString("C")
+        </span>
+    }
+    else
+    {
+        <span style="background-color:green">
+            Employee Salary: @Model.Salary.ToString("C")
+        </span>
+    }
+</div>  
 </body>
 </html>

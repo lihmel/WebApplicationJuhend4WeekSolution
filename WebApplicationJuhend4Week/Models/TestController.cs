@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using Lab3.Models;
 
 namespace Lab3.Models
 {
@@ -14,10 +15,10 @@ namespace Lab3.Models
             emp.FirstName = "Sukesh";
             emp.LastName = "Marla";
             emp.Salary = 20000;
-
-            ViewData["Employee"] = emp;
-            return View("MyView");
+            return View("MyView", emp);
      }
-        
+
+
     }
+    
 }
