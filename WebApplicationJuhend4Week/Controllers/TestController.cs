@@ -4,13 +4,15 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 
-namespace WebApplicationJuhend4Week.Controllers
+namespace Lab1.Controllers
 {
     public class TestController : Controller
     {
-        public string GetString()
+       
+        public  ActionResult GetView()
         {
-            return "Hello world!";
+            return View("MyView");
         }
+       
     }
 }
